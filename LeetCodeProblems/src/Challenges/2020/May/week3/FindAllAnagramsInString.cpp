@@ -14,7 +14,7 @@ FindAllAnagramsInString::~FindAllAnagramsInString() {
 	// TODO Auto-generated destructor stub
 }
 
-vector<int> FindAllAnagramsInString::findAnagrams(string s, string p) {
+vector<int> FindAllAnagramsInString::findAnagrams(string s, string p) {// need to be ReVisited
 
 	// if(letters[s.at(i) - 'a']++ >= 0)
 	// means check letters[s.at(i) - 'a'] >= 0 then increase it
@@ -28,7 +28,7 @@ vector<int> FindAllAnagramsInString::findAnagrams(string s, string p) {
 	 int remaining = p.size(), j = 0;
 
 	 //sliding window technique.
-	 for(int i = 0; i< s.size(); i++){
+	 for(int i = 0; i < s.size(); i++){
 		 while(j < s.size() && j - i < p.size()){
 	       if(letters[s.at(j) - 'a'] > 0){
 	    	   remaining--;
@@ -49,3 +49,8 @@ vector<int> FindAllAnagramsInString::findAnagrams(string s, string p) {
 	 }
 	 return result;
 }
+
+
+// if(letters[s.at(j) - 'a']-- > 0)
+// First checks if letters[s.at(j) - 'a'] > 0, then decrements letters[s.at(j) - 'a']--
+

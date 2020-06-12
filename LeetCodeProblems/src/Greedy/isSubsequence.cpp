@@ -15,8 +15,8 @@ isSubsequence::~isSubsequence() {
 }
 
 bool isSubsequence::isSubseequence(string s, string t) {
-    int i = 0;
-    int j = 0;
+    int i = 0; // counter on String t
+    int j = 0; // counter on String s
     while(i < t.length()){
         if(t[i] == s[j]){
             j++;

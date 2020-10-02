@@ -16,10 +16,11 @@ PowerOfTwo::~PowerOfTwo() {
 
 bool PowerOfTwo::isPowerOfTwo(int n) {
 
-    if(n==0)
+    if (n <= 0)
         return false;
-
-    return (ceil(log2(n)) == floor(log2(n)));
+    while (n % 2 == 0)
+        n /= 2;
+    return n == 1;
 
 }
 

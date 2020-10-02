@@ -27,7 +27,7 @@ vector<int> FindAllAnagramsInString::findAnagrams(string s, string p) {// need t
 	 vector<int> result;
 	 int remaining = p.size(), j = 0;
 
-	 //sliding window technique.
+	 //sliding window technique. ()
 	 for(int i = 0; i < s.size(); i++){
 		 while(j < s.size() && j - i < p.size()){
 	       if(letters[s.at(j) - 'a'] > 0){

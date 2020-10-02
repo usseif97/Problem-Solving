@@ -37,4 +37,5 @@ int SearchInsertPosition::searchInsert(vector<int>& nums, int target) {
     } else {
         return nums.size(); // the last element
     }
+}
 

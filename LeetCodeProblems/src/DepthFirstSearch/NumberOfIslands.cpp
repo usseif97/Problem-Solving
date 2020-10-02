@@ -18,6 +18,10 @@ int NumberOfIslands::numIslands(vector<vector<char>>& grid) {
     int count = 0;
 	cout << "NumberOfIslands" << endl;
 
+    //int n = grid.size();
+    //int m = grid[0].size();
+    // Intailze 2D empty Vector
+    //vector<vector<int>>visited(n,vector<int>(m));
 
     vector<vector<int>> visited;
     for(int i = 0; i < grid.size(); i++) {

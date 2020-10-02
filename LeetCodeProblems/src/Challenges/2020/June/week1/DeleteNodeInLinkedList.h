@@ -10,13 +10,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 class DeleteNodeInLinkedList {
 public:
 	DeleteNodeInLinkedList();
 	virtual ~DeleteNodeInLinkedList();
-	void deleteNode(ListNode* );
 };
 
 #endif /* CHALLENGES_JUNE_WEEK1_DELETENODEINLINKEDLIST_H_ */
